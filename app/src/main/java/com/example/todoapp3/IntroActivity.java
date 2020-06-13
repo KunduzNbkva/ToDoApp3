@@ -42,11 +42,23 @@ public class IntroActivity extends AppCompatActivity {
                     btnNext.setVisibility(View.VISIBLE);
                     btnSkip.setVisibility(View.VISIBLE);
                     btnNext.setText("NEXT");
+                    btnNext.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            onNextButton(v);
+                        }
+                    });
                 }
                 if(pos==1){
                     btnNext.setVisibility(View.VISIBLE);
                     btnSkip.setVisibility(View.VISIBLE);
                     btnNext.setText("NEXT");
+                    btnNext.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            onNextButton(v);
+                        }
+                    });
                 }
               if(pos==2){
                     btnSkip.setVisibility(View.GONE);
